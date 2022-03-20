@@ -7,7 +7,9 @@ class Settings:
 
 	def __init__(self):
 
-		self.SCREEN_WIDTH, self.SCREEN_HEIGHT = 1400, 900
+		# BORING SETTINGS
+
+		self.SCREEN_WIDTH, self.SCREEN_HEIGHT = 1200, 800
 
 		self.BLACK = (0, 0, 0)
 		self.WHITE = (255, 255, 255)
@@ -22,24 +24,30 @@ class Settings:
 		self.FONT_SIZE = 30
 
 		self.FPS = 10000
-
-		self.INITIAL_A_COORDS = (500, 400)
-		self.INITIAL_B_COORDS = (700, 600)
-		self.INITIAL_X_VEL_A = 8
-		self.INITIAL_X_VEL_B = -4
 		self.DT = 0.1
 
-		self.massA = 1
-		self.massB = 2
-		self.radiusA = 10
-		self.radiusB = 15
+		self.RADIUS_A = 5
 		self.colourA = self.BLUE
-		self.colourB = self.ORANGE
+		self.colourB = self.YELLOW
 		self.GRAV_CONST = 10000
 
 		self.TRAIL_SPACING = 40
 		self.TRAIL_LENGTH = 200
 		self.TRAIL_COLOUR = self.WHITE
 		self.TRAIL_SIZE = 1
+
+
+		# LESS BORING SETTINGS
+
+		# Adjust INITIAL_YA and INITIAL_YB to change the starting y coordinates of the masses
+		self.INITIAL_YA = 100
+		self.INITIAL_YB = 500
+
+		# Adjust A_VEL to change the starting horizontal velocity of the smaller mass
+		self.A_VEL = 12
+
+		# Change the mass ratio to increase/decrease (massB / massA)
+		self.MASS_RATIO = 10
+		
 
 		
